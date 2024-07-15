@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skycast</title>
+</head>
+<style>
+    body
+   {
+    font-family:'open sans', capital;
+    color: aliceblue; 
+    background-image: url('back.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-color: black;
+   } 
+   h1
+   {
+    color: rgb(200, 229, 254);
+    font-size: 3rem;
+    position: absolute;
+    top: -24px; left: 50px;
+   }
+   .left #subh
+   {
+    color: rgb(248, 207, 171);
+    position: absolute;
+    font-size: 1.5rem;
+    top: 29px; left:46px ;
+   }
+   .center
+   {
+    background-color: rgba(69, 74, 89, 0.3);
+    width: 350px;
+    height: 52px;
+    border-radius: 25px;
+    position: absolute;
+    right: 620px; top: 18px ;
+    padding: 1px 34px;
+    font-size: 1.5rem;
+   }
+   .center img
+   {
+    position: absolute;
+    top: 10px; left: 25px;
+   }
+   .center a
+   {
+    position: absolute;
+    top: 13px; left: 75px;
+   }
+   .right
+   {
+    background-color: rgba(69, 74, 89, 0.3);
+    width: 550px;
+    height: 52px;
+    border-radius: 25px;
+    position: absolute;
+    top: 18px; right: 25px;
+   }
+   .right input
+   {
+    background-color: transparent;
+    border: none; 
+    outline: none; 
+    color: white; 
+    font-size: 1.5rem;
+    flex: 1;
+    position: absolute;
+    top: 11px; right: 150px;
+    padding: 1px 34px;
+   }
+   .right img
+   {
+    position: absolute;
+    top: 2px; right: 490px;
+
+   }
+    .con1
+   {
+    background-color: rgba(69, 74, 89, 0.3);
+    width: 390px; height: 50px;
+    position: absolute;
+    left:45px; top:150px;
+    border-radius: 24px;
+   }
+   .con1 #sub1
+   {
+    position: absolute; top: 14px; left: 56px;
+   }
+   .con1 #sub2
+   {
+    background-color:rgba(71, 144, 197, 0.3) ;
+    position: absolute; top: 6px; left:177px;
+    border-radius: 20px;
+    width: 84px; height: 23px;
+    padding: 8px 56px;
+   }
+   .con2
+   {
+    background-color: rgba(69, 74, 89, 0.3);
+    width: 500px;
+    height: 270px;
+    border-radius: 25px;
+    position: absolute; top: 240px; left:45px;
+   }
+   .con2 h4
+   {
+    position: relative; top: -17px; 
+   }
+   .con2 img
+   {
+    position:absolute; top: 92px; left:55px;
+   }
+   .con2 .left1 p
+   {
+    position:absolute; top: 202px; left:88px; font-size: 1.4rem; 
+   }
+   .con2 .right1
+   {
+    position: absolute;
+    left: 295px;top: 145px; font-size: 1.2rem;
+   }
+   .left-cell
+   {
+    color: rgba(71, 144, 197, 0.9);
+    position: relative; right: 20px;
+   }
+   .con2 #temp
+   {
+    position: absolute;
+    left: 330px;top: 65px; font-size: 1.6rem; 
+   }
+   #midl
+   {
+    background-color: rgba(69, 74, 89, 0.3);
+    width: 250px; height:270px ;
+    position: absolute; left: 585px; top:240px ; border-radius: 25px;
+   }
+   #midr
+   {
+    background-color: rgba(69, 74, 89, 0.3);
+    width: 250px; height:270px ;
+    position: absolute; left: 875px; top:240px ; border-radius: 25px;
+   }
+   #right2
+   {
+    background-color: rgba(69, 74, 89, 0.3);
+    width: 250px; height:270px ;
+    position: absolute; left: 1165px; top:240px ; border-radius: 25px;
+   }
+   hr
+   {
+    position: relative; top:-26px; opacity: .3;
+   }
+   h4
+   {
+     font-size:1.4rem ;
+     text-align: center;  position: relative; top: -13px;
+   }
+   .day img
+   {
+    position: relative;
+    left: 85px;
+   }
+   .day p
+   {
+    text-align: center;
+    font-weight: bold;
+   }
+   .day a
+   {
+    display: block;
+    text-align: center;
+    font-weight: bold; 
+    font-size: 1.4rem;
+   }
+   .bottom
+   {
+    background-color: rgba(69, 74, 89, 0.3); border-radius: 25px;
+    position: absolute; width: 1080px; height: 290px;
+    top: 550px; left: 45px;
+   }
+   #Last
+   {
+    position: relative; left: 0px; font-size: 1.4rem;
+   }
+   .bottom img
+   {
+    position: relative; left: 45px; top: -100px; opacity: .9;
+   }
+   .bottomr
+   {
+    background-color: rgba(69, 74, 89, 0.3);
+    width: 250px; height:290px ;
+    position: absolute; top: 550px; right: 25px;
+    border-radius: 25px; text-align: center;
+   }
+   .last
+   {
+    position: relative; 
+    background-color:rgba(71, 144, 197, 0.3) ;  padding: 8px 35px; border-radius: 20px;
+    width: 128px;
+    margin-top: -20px; left: 26px;
+   }
+
+</style>
+ <body style="background-image: url('back.png'); background-size: cover;">
+<header class="header">
+        <div class="left">
+            <h1>Skycast</h1>
+            <p id="subh">weather forecast</p> 
+        </div>
+        <div class="center">
+            <img src="elements/location.png" width="25px">
+            <a>Ujjain,India</a>
+        </div>
+        <div class="right">
+            <form action="data.php"></form>
+            <img src="elements/search.png" width="45px">
+            <input type="text" placeholder="Search ">
+        </div>
+    </header>
+    <div class="con1">
+    <a id="sub1">Yesterday</a> 
+    <a id="sub2"><b>Next 4 days</b></a>
+    </div>
+    <div class="con2">
+        <h4>Today</h4> <hr class="line">
+        <div class="left1">
+           <img src="elements/Sunny.png" alt="loading failed" width="120px">
+           <b><p>Sunny</p></b> 
+        </div>
+        <div id="temp">
+          <b> <p>29 <sup>o</sup> C</p></b>
+        </div>
+        <b><table class="right1">
+           <tr>
+            <td class="left-cell"">Feels like</td>
+            <td>32<sup>o</sup>C</td>
+           </tr>
+           <tr>
+            <td class="left-cell">Wind</td>
+            <td>27 kmph</td>
+           </tr>
+           <tr>
+            <td class="left-cell">Humidity</td>
+            <td>86%</td>
+           </tr>
+         </table></b>
+    </div> 
+    <div id="midl" class="day">
+        <h4>Monday</h4><hr class="line">
+        <img src="elements/partlycloudy.png" alt="loading failed" width="80px">
+        <p>Partly cloudy</p>
+        <a>27 <sup>o</sup> C</a>
+    </div> 
+    <div id="midr" class="day">
+        <h4>Tuesday</h4><hr class="line">
+        <img src="elements/rainy.png" alt="loading failed" width="80px">
+        <p>Rainy</p>
+        <a>25 <sup>o</sup> C</a>
+    </div> 
+    <div id="right2" class="day">
+        <h4>Wednesday</h4><hr class="line">
+        <img src="elements/thunder.png" alt="loading failed" width="80px">
+        <p>Rain with thunder</p>
+        <a>24 <sup>o</sup> C</a>
+    </div> 
+    <div class="bottom">
+    <h4 id="Last">Last Week</h4><hr>
+    <img src="elements/graph.png" alt="loading failed" width="1000px" height="350px">
+    </div>
+    <div class="bottomr">
+        <h4>Other cities</h4><hr>
+        <pre>
+        <p class="last">Indore      30 <sup>o</sup> C</p>              
+        <p class="last">Kharagpur   30 <sup>o</sup> C</p>
+        <p class="last">Delhi       30 <sup>o</sup> C</p></pre>
+    </div>
+    </body>
+    </html>
+    
